@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45235B8126CB274500CA6045 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 45235B8026CB274500CA6045 /* Alamofire */; };
+		45235B8426CB36CC00CA6045 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45235B8326CB36CC00CA6045 /* NetworkManager.swift */; };
 		454D8C6E26CAE128005E2770 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454D8C6D26CAE128005E2770 /* HomeTabView.swift */; };
 		454D8C7226CAE3D6005E2770 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454D8C7126CAE3D6005E2770 /* SettingView.swift */; };
 		454D8C7926CAE85C005E2770 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454D8C7826CAE85C005E2770 /* MoviesView.swift */; };
@@ -21,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45235B8326CB36CC00CA6045 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		454D8C6D26CAE128005E2770 /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		454D8C7126CAE3D6005E2770 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		454D8C7826CAE85C005E2770 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45235B8126CB274500CA6045 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 		454D8C6A26CAE098005E2770 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				45235B8326CB36CC00CA6045 /* NetworkManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -138,6 +143,9 @@
 			dependencies = (
 			);
 			name = "aurelion-movies";
+			packageProductDependencies = (
+				45235B8026CB274500CA6045 /* Alamofire */,
+			);
 			productName = "aurelion-movies";
 			productReference = 454E8CEF26CAD7FD003B7593 /* aurelion-movies.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +173,9 @@
 				Base,
 			);
 			mainGroup = 454E8CE626CAD7FD003B7593;
+			packageReferences = (
+				45235B7F26CB274500CA6045 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 454E8CF026CAD7FD003B7593 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,6 +204,7 @@
 			files = (
 				454D8C8226CAF676005E2770 /* Cast.swift in Sources */,
 				454D8C7F26CAEAAB005E2770 /* Movie.swift in Sources */,
+				45235B8426CB36CC00CA6045 /* NetworkManager.swift in Sources */,
 				454D8C8526CAF76F005E2770 /* Review.swift in Sources */,
 				454D8C7926CAE85C005E2770 /* MoviesView.swift in Sources */,
 				454D8C6E26CAE128005E2770 /* HomeTabView.swift in Sources */,
@@ -388,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45235B7F26CB274500CA6045 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45235B8026CB274500CA6045 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45235B7F26CB274500CA6045 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 454E8CE726CAD7FD003B7593 /* Project object */;
 }
